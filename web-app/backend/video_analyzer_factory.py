@@ -6,7 +6,7 @@ Provides easy access to different video understanding implementations
 
 from typing import Dict, Any, Optional
 from video_analyzer_base import VideoAnalyzerBase
-from analyzers.gemini_analyzer import GeminiVideoAnalyzer
+from gemini_analyzer import GeminiVideoAnalyzer
 
 
 class VideoAnalyzerFactory:

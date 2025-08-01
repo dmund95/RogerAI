@@ -1,9 +1,0 @@
-mediapipe
-opencv-python
-numpy
-matplotlib
-transformers
-Pillow
-tqdm
-supervision
-google-generativeai

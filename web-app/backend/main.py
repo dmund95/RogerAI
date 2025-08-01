@@ -25,10 +25,6 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 import logging
 
-
-# Add parent directory to path to import our modules
-sys.path.append(str(Path(__file__).parent.parent.parent))
-
 from video_analysis_pipeline import VideoAnalysisPipeline, create_tennis_serve_prompt, create_general_sports_prompt
 
 logger = logging.getLogger(__name__)

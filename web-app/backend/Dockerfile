@@ -19,22 +19,11 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the main project files
-COPY ../requirements.txt ./main_requirements.txt
-RUN pip install --no-cache-dir -r main_requirements.txt
-
 # Copy application code
 COPY . .
-COPY ../models ./models
-COPY ../analyzers ./analyzers
-COPY ../video_analysis_pipeline.py .
-COPY ../video_analyzer_base.py .
-COPY ../video_analyzer_factory.py .
-COPY ../pose_estimator_base.py .
-COPY ../model_factory.py .
 
-# Create necessary directories
-RUN mkdir -p uploads results temp frames frames/roger
+# # Create necessary directories
+# RUN mkdir -p uploads results temp frames frames/roger
 
 # Expose port
 EXPOSE 8000

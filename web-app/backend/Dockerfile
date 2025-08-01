@@ -2,14 +2,14 @@ FROM python:3.11-slim
 
 # Install system dependencies for OpenCV and MediaPipe
 RUN apt-get update && apt-get install -y \
-    libglib2.0-0 \
-    libsm6 \
-    libxext6 \
-    libxrender-dev \
-    libgomp1 \
-    libgoogle-glog0v5 \
-    libgflags2.2 \
-    libprotobuf23 \
+    # libglib2.0-0 \
+    # libsm6 \
+    # libxext6 \
+    # libxrender-dev \
+    # libgomp1 \
+    # libgoogle-glog0v5 \
+    # libgflags2.2 \
+    # libprotobuf23 \
     ffmpeg \
     && rm -rf /var/lib/apt/lists/*
 
